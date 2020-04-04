@@ -40,10 +40,7 @@ class App extends Component {
     }
 
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-
-    navigator.mediaDevices.getUserMedia(constraints)
-    .then( succes )
-    .catch( failure )
+    navigator.mediaDevices.getUserMedia(constraints, succes, failure)
     }
   }
 
