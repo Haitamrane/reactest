@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reactest/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/reactest/static/js/main.f47e693f.chunk.js",
+    "main.js.map": "/reactest/static/js/main.f47e693f.chunk.js.map",
+    "runtime-main.js": "/reactest/static/js/runtime-main.2a914a9f.js",
+    "runtime-main.js.map": "/reactest/static/js/runtime-main.2a914a9f.js.map",
+    "static/js/2.8ebdf4f8.chunk.js": "/reactest/static/js/2.8ebdf4f8.chunk.js",
+    "static/js/2.8ebdf4f8.chunk.js.map": "/reactest/static/js/2.8ebdf4f8.chunk.js.map",
+    "index.html": "/reactest/index.html",
+    "precache-manifest.844ea0da794c13219ffec0bd88bf9ee4.js": "/reactest/precache-manifest.844ea0da794c13219ffec0bd88bf9ee4.js",
+    "service-worker.js": "/reactest/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/reactest/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.8ebdf4f8.chunk.js.LICENSE.txt": "/reactest/static/js/2.8ebdf4f8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a914a9f.js",
+    "static/js/2.8ebdf4f8.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.f47e693f.chunk.js"
+  ]
+}
