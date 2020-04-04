@@ -79,11 +79,11 @@ class App extends Component {
     <div> 
       <video style={{
         width: 640, height: 640, margin: 5, background: 'black'
-      }} ref={this.localVideoref} autoPlay></video>
+      }} ref={this.localVideoref} autoPlay controls></video>
 
       <video style={{
         width: 640, height: 640, margin: 5, background: 'black'
-      }} ref={this.remoteVideoref} autoPlay></video>
+      }} ref={this.remoteVideoref} autoPlay controls></video>
 
       <button onClick={this.createOffer}>Offer</button>
       <button onClick={this.createAnswer}>Answer</button>
