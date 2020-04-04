@@ -39,7 +39,9 @@ class App extends Component {
       console.log('getUserMedia Error:', e)
     }
 
-    navigator.getUserMedia(constraints, succes, failure)
+    navigator.mediaDevices.getUserMedia(constraints)
+    .then( succes )
+    .catch( failure )
   }
 
     createOffer = () => {
