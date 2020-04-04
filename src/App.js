@@ -6,12 +6,26 @@ class App extends Component {
 
     this.localVideoref = React.createRef()
     this.remoteVideoref = React.createRef()
+
+    this.candidates = []
+
   }
+
 
   componentDidMount() {
 
-    const pc_config = null
-
+    const pc_config = {
+      "iceServers": [
+        // {
+        //   urls: 'stun:[STUN_IP]:[PORT]',
+        //   'credentials': '[YOR CREDENTIALS]',
+        //   'username': '[USERNAME]'
+        // },
+        {
+          urls : 'stun:stun.l.google.com:19302'
+        }
+      ]
+    }
 
 
     this.pc = new RTCPeerConnection(pc_config)
@@ -40,7 +54,9 @@ class App extends Component {
     }
 
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    navigator.mediaDevices.getUserMedia(constraints, succes, failure)
+    navigator.mediaDevices.getUserMedia(constraints)
+    .then( succes )
+    .catch( failure )
     }
   }
 
