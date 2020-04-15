@@ -14,18 +14,19 @@ class App extends Component {
 
   componentDidMount() {
 
-    const pc_config = {
-      "iceServers": [
+    const pc_config = null 
+    //{
+      //"iceServers": [
         // {
         //   urls: 'stun:[STUN_IP]:[PORT]',
         //   'credentials': '[YOR CREDENTIALS]',
         //   'username': '[USERNAME]'
         // },
-        {
-          urls : 'stun:stun.l.google.com:19302'
-        }
-      ]
-    }
+      //  {
+       //   urls : 'stun:stun.l.google.com:19302'
+      //  }
+     // ]
+    //}
 
 
     this.pc = new RTCPeerConnection(pc_config)
