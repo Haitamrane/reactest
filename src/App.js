@@ -38,8 +38,8 @@ class App extends Component {
       console.log(e)
     }
 
-    this.pc.onaddsteam = (e) => {
-      this.remoteVideoref.current.srcObject = e.stream
+    this.pc.ontrack = (e) => {
+      this.remoteVideoref.current.srcObject = e.streams[0]
     }
 
     const constraints = { video: true, audio: true }
